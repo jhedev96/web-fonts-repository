@@ -1,0 +1,169 @@
+[2021-03-31 13:02:01] ERROR Error: Call to a member function getBody() on null in /storage/emulated/0/htdocs/webfonts/config/routes.php:37
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/config/routes.php(67): download('fonts/FlappyBir...')
+#1 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(335): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(313): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(495): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(388): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(296): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#11 {main}
+[2021-03-31 13:03:45] ERROR Error: Call to a member function getBody() on null in /storage/emulated/0/htdocs/webfonts/config/routes.php:37
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/config/routes.php(67): download('fonts/FlappyBir...')
+#1 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(335): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(313): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(495): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(388): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(296): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#11 {main}
+[2021-03-31 13:06:47] ERROR Error: Call to a member function getBody() on null in /storage/emulated/0/htdocs/webfonts/config/routes.php:39
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/config/routes.php(69): download('fonts/FlappyBir...')
+#1 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(335): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(313): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(495): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(388): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(296): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#11 {main}
+[2021-03-31 13:06:50] ERROR Error: Call to a member function getBody() on null in /storage/emulated/0/htdocs/webfonts/config/routes.php:39
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/config/routes.php(69): download('fonts/FlappyBir...')
+#1 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(335): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(313): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(495): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(388): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(296): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#11 {main}
+[2021-03-31 13:07:51] ERROR Error: Call to a member function write() on null in /storage/emulated/0/htdocs/webfonts/config/routes.php:39
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/config/routes.php(69): download('fonts/FlappyBir...')
+#1 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(335): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(313): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(495): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(388): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(296): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#11 {main}
+[2021-03-31 19:10:45] ERROR ParseError: syntax error, unexpected ']', expecting variable (T_VARIABLE) or '{' or '$' in /storage/emulated/0/htdocs/webfonts/templates/index.phtml:43
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/vendor/slim/php-view/src/PhpRenderer.php(169): Slim\Views\PhpRenderer->protectedIncludeScope('/storage/emulat...', Array)
+#1 /storage/emulated/0/htdocs/webfonts/vendor/slim/php-view/src/PhpRenderer.php(62): Slim\Views\PhpRenderer->fetch('index.phtml', Array)
+#2 /storage/emulated/0/htdocs/webfonts/config/routes.php(26): Slim\Views\PhpRenderer->render(Object(Slim\Http\Response), 'index.phtml', Array)
+#3 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(335): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(313): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(495): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(388): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(296): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#13 {main}
+[2021-04-01 19:38:11] ERROR ParseError: syntax error, unexpected ',' in /storage/emulated/0/htdocs/webfonts/src/Services/WebiconCSSGenerator/WebiconCSSGenerator.php:222
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/storage/emulat...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Src\\Services\\We...')
+#2 /storage/emulated/0/htdocs/webfonts/config/dependencies.php(37): spl_autoload_call('Src\\Services\\We...')
+#3 /storage/emulated/0/htdocs/webfonts/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('webiconCSSGener...')
+#5 /storage/emulated/0/htdocs/webfonts/src/Controllers/CSSIconGeneratorController.php(60): Slim\Container->get('webiconCSSGener...')
+#6 [internal function]: Src\Controllers\CSSIconGeneratorController->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(335): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#9 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(313): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(495): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(388): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(296): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#16 {main}
+[2021-04-12 17:20:50] ERROR RuntimeException: CSRF middleware failed. Session not found. in /storage/emulated/0/htdocs/webfonts/vendor/slim/csrf/src/Guard.php:190
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/vendor/slim/csrf/src/Guard.php(143): Slim\Csrf\Guard->validateStorage()
+#1 [internal function]: Slim\Csrf\Guard->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Slim\Csrf\Guard), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#9 {main}
+[2021-04-12 17:21:13] ERROR RuntimeException: CSRF middleware failed. Session not found. in /storage/emulated/0/htdocs/webfonts/vendor/slim/csrf/src/Guard.php:190
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/vendor/slim/csrf/src/Guard.php(143): Slim\Csrf\Guard->validateStorage()
+#1 [internal function]: Slim\Csrf\Guard->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Slim\Csrf\Guard), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#9 {main}
+[2021-04-12 17:34:58] ERROR FastRoute\BadRouteException: Cannot register two routes matching "/css" for method "GET" in /storage/emulated/0/htdocs/webfonts/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php:86
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute('GET', Array, 'route2')
+#1 /storage/emulated/0/htdocs/webfonts/vendor/nikic/fast-route/src/RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute('GET', Array, 'route2')
+#2 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Router.php(229): FastRoute\RouteCollector->addRoute(Array, '/css', 'route2')
+#3 /storage/emulated/0/htdocs/webfonts/vendor/nikic/fast-route/src/functions.php(25): Slim\Router->Slim\{closure}(Object(FastRoute\RouteCollector))
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Router.php(240): FastRoute\simpleDispatcher(Object(Closure), Array)
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Router.php(193): Slim\Router->createDispatcher()
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(578): Slim\Router->dispatch(Object(Slim\Http\Request))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(497): Slim\App->dispatchRouterAndPrepareRoute(Object(Slim\Http\Request), Object(Slim\Router))
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/csrf/src/Guard.php(171): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 [internal function]: Slim\Csrf\Guard->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#10 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Slim\Csrf\Guard), Array)
+#11 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#12 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#13 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#16 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#17 {main}
+[2021-04-12 17:42:02] ERROR Slim\Exception\ContainerValueNotFoundException: Identifier "csrf" is not defined. in /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Container.php:106
+Stack trace:
+#0 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Container.php(164): Slim\Container->get('csrf')
+#1 /storage/emulated/0/htdocs/webfonts/config/middleware.php(11): Slim\Container->__get('csrf')
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /storage/emulated/0/htdocs/webfonts/vendor/slim/csrf/src/Guard.php(171): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 [internal function]: Slim\Csrf\Guard->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#10 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Slim\Csrf\Guard), Array)
+#11 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#12 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#13 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 /storage/emulated/0/htdocs/webfonts/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#16 /storage/emulated/0/htdocs/webfonts/public/index.php(28): Slim\App->run()
+#17 {main}

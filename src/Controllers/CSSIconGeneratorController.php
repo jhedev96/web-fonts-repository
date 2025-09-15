@@ -5,18 +5,18 @@ namespace Src\Controllers;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Src\Services\WebfontCSSGenerator\Exceptions\InvalidSettingsException;
-use Src\Services\WebfontCSSGenerator\WebfontCSSGenerator;
+use Src\Services\WebiconCSSGenerator\Exceptions\InvalidSettingsException;
+use Src\Services\WebiconCSSGenerator\WebiconCSSGenerator;
 
 /**
- * Class CSSGeneratorController
+ * Class CSSIconGeneratorController
  *
  * The controller for generating webfonts CSS files.
  *
  * @author Finesse
  * @package Src\Controllers
  */
-class CSSGeneratorController
+class CSSIconGeneratorController
 {
     /**
      * @var ContainerInterface Dependencies container
@@ -55,15 +55,15 @@ class CSSGeneratorController
         }
 
         // Generating the CSS code
-        /** @var WebfontCSSGenerator $webfontCSSGenerator */
+        /** @var WebiconCSSGenerator $webiconCSSGenerator */
         try {
-            $webfontCSSGenerator = $this->container->get('webfontCSSGenerator');
+            $webiconCSSGenerator = $this->container->get('webiconCSSGenerator');
         } catch (InvalidSettingsException $error) {
             $this->container->get('logger')->error($error);
             return $this->createErrorResponse('The app settings are invalid: '.$error->getMessage(), 500);
         }
         try {
-            $cssCode = $webfontCSSGenerator->makeCSS($requestedFonts, $fontDisplay, $fontStretch);
+            $cssCode = $webiconCSSGenerator->makeCSS($requestedFonts, $fontDisplay, $fontStretch);
         } catch (\InvalidArgumentException $error) {
             return $this->createErrorResponse($error->getMessage());
         }

@@ -1,23 +1,23 @@
 <?php
 
-namespace Src\Services\WebfontCSSGenerator;
+namespace Src\Services\WebiconCSSGenerator;
 
 use Slim\Container;
 use Src\Helpers\CSSHelpers;
 use Src\Helpers\FileHelpers;
-use Src\Services\WebfontCSSGenerator\Exceptions\InvalidSettingsException;
-use Src\Services\WebfontCSSGenerator\Models\Family;
-use Src\Services\WebfontCSSGenerator\Models\Style;
+use Src\Services\WebiconCSSGenerator\Exceptions\InvalidSettingsException;
+use Src\Services\WebiconCSSGenerator\Models\Family;
+use Src\Services\WebiconCSSGenerator\Models\Style;
 
 /**
- * Class WebfontCSSGenerator
+ * Class WebiconCSSGenerator
  *
- * Generates CSS code for embedding webfonts.
+ * Generates CSS code for embedding webicons.
  *
  * @author Finesse
- * @package Src\Services\WebfontCSSGenerator
+ * @package Src\Services\WebiconCSSGenerator
  */
-class WebfontCSSGenerator
+class WebiconCSSGenerator
 {
     /**
      * Path to the directory which is the site root.
@@ -27,7 +27,7 @@ class WebfontCSSGenerator
     /**
      * Name of the fonts directory in the site root directory. May contain slashes for subdirectories.
      */
-    const FONTS_DIRECTORY = 'fonts';
+    const FONTS_DIRECTORY = 'icons';
 
     /**
      * @var Family[] List of available font families. The array keys are the family names.
@@ -182,7 +182,7 @@ class WebfontCSSGenerator
 
         // Does the style has any font files?
         $files = $this->getFontFilesURLs($family, $style);
-        $files = str_replace(self::FONTS_DIRECTORY, (new Container(['settings' => require __DIR__ . '/../../../config/settings.php']))->get('settings')['directory_alias']['fonts'], $files);
+        $files = str_replace(self::FONTS_DIRECTORY, (new Container(['settings' => require __DIR__ . '/../../../config/settings.php']))->get('settings')['directory_alias']['icons'], $files);
         if (empty($files)) {
             return '';
         }
@@ -219,9 +219,33 @@ class WebfontCSSGenerator
             . "\tfont-style: ".($style->isItalic ? 'italic' : 'normal').";\n"
             . ($fontDisplay !== '' ? "\tfont-display: $fontDisplay;\n" : '')
             . ($fontStretch !== '' ? "\tfont-stretch: $fontStretch;\n" : '')
-            . (isset($files['eot']) ? "\tsrc: url(".CSSHelpers::formatString(($_GET['q'] == 'css' ? $files['eot'] : sprintf('data:%s;charset=utf-8;base64,%s', $this->getMimeType(str_replace($this->hostNameURL, self::SITE_ROOT_PATH, $files['eot'])), base64_encode(file_get_contents($files['eot']))))).");\n" : '')
+            . (isset($files['eot']) ? "\tsrc: url(".CSSHelpers::formatString(($_GET['q'] == 'icon' ? $files['eot'] : sprintf('data:%s;charset=utf-8;base64,%s', $this->getMimeType(str_replace($this->hostNameURL, self::SITE_ROOT_PATH, $files['eot'])), base64_encode(file_get_contents($files['eot'])))))."); /* For IE 6 to 8 */\n" : '')
             . "\tsrc: ".implode(",\n\t\t", $sources).";\n"
-            . "}\n";
+            . "}\n"
+            
+            . "\n.material-icons {\n"
+            . "\tfont-family: ".CSSHelpers::formatString($family->name).";\n"
+            . "\tfont-weight: normal;\n"
+            . "\tfont-style: normal;\n"
+            . "\tfont-size: 24px; /* Preferred icon size */\n"
+            . "\tdisplay: inline-block;\n"
+            . "\twidth: 1em;\n"
+            . "\theight: 1em;\n"
+            . "\tline-height: 1;\n"
+            . "\ttext-transform: none;\n"
+            . "\tletter-spacing: normal;\n"
+            . "\tword-wrap: normal;\n"
+            . "\twhite-space: nowrap;\n"
+            . "\tdirection: ltr;\n\n"
+            . "\t/* Support for all WebKit browsers. */\n"
+            . "\t-webkit-font-smoothing: antialiased;\n\n"
+            . "\t/* Support for Safari and Chrome. */\n"
+            . "\ttext-rendering: optimizeLegibility;\n\n"
+            . "\t/* Support for Firefox. */\n"
+            . "\t-moz-osx-font-smoothing: grayscale;\n\n"
+            . "\t/* Support for IE. */\n"
+            . "\tfont-feature-settings: 'liga';\n"
+            . "}";
     }
 
     /**

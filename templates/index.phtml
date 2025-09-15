@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Web fonts repository</title>
-    </head>
-    <body>
-        <h1>Web fonts repository</h1>
-		<p>Use the URL <a href="<?= htmlspecialchars($cssApiUrl) ?>"><?= htmlspecialchars($cssApiUrl) ?></a> to get a font CSS.</p>
-    </body>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JheDev Fonts</title>
+  <meta name="author" content="JheDev">
+  <meta name="description" content="Webfont conversion of the Clear Sans typeface designed by Intel.">
+
+  <meta content="Clear Sans Webfont" property="og:site_name">
+  
+  <meta content="Home" property="og:title">
+  
+  <meta content="Webfont conversion of the Clear Sans typeface designed by Intel." property="og:description">
+
+  <link rel="canonical" href="">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+
+  <body>
+
+    <header>
+  <div class="container">
+    <h1><a href="">Web Fonts Repository</a></h1>
+    <p class="lead">by JheDev</p>
+  </div>
+</header>
+
+
+    <article class="page">
+      <div id="download" class="download">
+        <div class="container">
+          <div class="content content-borderless">
+            <div class="center">
+              <span class="download-description">current version: <strong>v1.0.52</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="about">
+        <div class="container">
+          <div class="content">
+            <h1 class="section-header">Available fonts family</h1>
+
+            <hr class="divider" />
+
+            <p class="lead">
+              <?php
+                    echo "<select class=\"btn btn-default btn-lg btn-block\">"
+                    . "<option value=\"\">Change fonts family..</option>";
+                    foreach ($fontsList as $fonts => $font) {
+                        echo "<option value=\"".$fonts."\">• ".$fonts."</option>";
+                    }
+                    echo "</select>";
+              ?>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="embedCode" style="display:none;">
+        <div class="container">
+          <div class="content">
+            <h1 class="section-header">Embedding Code</h1>
+
+            <hr class="divider" />
+
+            <p class="text-center">SCC embedding code.</p>
+
+            <div class="samples">
+              <div class="row">
+                <div class="column">
+                    <code id="embed"></code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sample" style="display:none;">
+        <div class="container">
+          <div class="content">
+            <h1 class="section-header">Available weights</h1>
+
+            <hr class="divider" />
+
+            <p class="text-center">Try clicking on them to change the font weight of the specimen.</p>
+
+            <div class="samples">
+              <div class="row">
+                <div class="column one-half">
+                  <button id="btnThin" class="btn btn-default btn-lg btn-block sample-thin">100 Thin</button>
+                  <button id="btnLight" class="btn btn-default btn-lg btn-block sample-light">300 Light</button>
+                  <button id="btnRegular" class="btn btn-default btn-lg btn-block sample-regular">400 Regular</button>
+                  <button id="btnItalic" class="btn btn-default btn-lg btn-block sample-regular sample-italic">400 Italic</button>
+                </div>
+                <div class="column one-half">
+                  <button id="btnMedium" class="btn btn-default btn-lg btn-block sample-medium">500 Medium</button>
+                  <button id="btnMediumItalic" class="btn btn-default btn-lg btn-block sample-medium sample-italic">500 Medium Italic</button>
+                  <button id="btnBold" class="btn btn-default btn-lg btn-block sample-bold">700 Bold</button>
+                  <button id="btnBoldItalic" class="btn btn-default btn-lg btn-block sample-bold sample-italic">700 Bold Italic</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="specimen" class="specimen" style="display:none;">
+        <div class="container">
+          <div class="content content-borderless">
+            <h1 class="section-header">Specimen</h1>
+
+            <hr class="divider" />
+
+            <div id="specimen-test" contenteditable="true" spellcheck="false" class="row">
+              <div class="column">
+                <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
+                <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+                <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+                <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+  <div class="container">
+    <small>
+      &copy; JheDev Fonts.
+    </small>
+  </div>
+</footer>
+
+    <script src="assets/js/script.js"></script>
+
+  </body>
 </html>
+
+
